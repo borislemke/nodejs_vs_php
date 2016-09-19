@@ -26,15 +26,15 @@ wrk -d5s -t10 -c5000 http://laravel.dev
 ```php
 /**
  * Test results:
- * | Subject                      | Requests/sec  | Data/sec   | Avg. Response |
- * -----------------------------------------------------------------------------
- * | Pure Node.js(Multi Thread)   | 20,873.34     | 3.09MB     | 11.40ms       |
- * | Pure Node.js(Single Thread)  | 10,375.05     | 1.53MB     | 22.70ms       |
- * | Express(JS, Multi Thread)    | 3,426.94      | 779.76KB   | 68.92ms       |
- * | Express(JS, Single Thread)   | 2,386.69      | 543.06KB   | 97.97ms       |
- * | Pure PHP(Multi Thread)       | 3,147.95      | 667.17KB   | 23.28ms       |
- * | Laravel(PHP, Multi Thread)   | 26.23         | 101.44KB   | 392.64ms      |
- * -----------------------------------------------------------------------------
+ * | Rank  | Subject                      | Requests/sec  | Data/sec   | Avg. Response |
+ * -------------------------------------------------------------------------------------
+ * |   1   | Pure Node.js(Multi Thread)   | 20,873.34     | 3.09MB     | 11.40ms       |
+ * |   2   | Pure Node.js(Single Thread)  | 10,375.05     | 1.53MB     | 22.70ms       |
+ * |   3   | Express(JS, Multi Thread)    | 3,426.94      | 779.76KB   | 68.92ms       |
+ * |   4   | Pure PHP(Multi Thread)       | 3,147.95      | 667.17KB   | 23.28ms       |
+ * |   5   | Express(JS, Single Thread)   | 2,386.69      | 543.06KB   | 97.97ms       |
+ * |   6   | Laravel(PHP, Multi Thread)   | 26.23         | 101.44KB   | 392.64ms      |
+ * -------------------------------------------------------------------------------------
  */
 ```
 
