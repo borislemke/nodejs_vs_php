@@ -16,7 +16,11 @@
 - Connections: 5000
 
 ```php
-wrk -d5s -t10 -c5000 http://localhost
+Node.js
+wrk -d5s -t10 -c5000 http://localhost:3000
+
+Laravel
+wrk -d5s -t10 -c5000 http://laravel.dev
 ```
 
 ```php
