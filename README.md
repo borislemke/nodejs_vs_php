@@ -69,8 +69,8 @@ wrk -d30s -t10 -c5000 http://laravel.dev
  * |   1   | Pure Node.js(Multi Thread)   | 24,559.01     | 3.63MB     | 9.76ms        |
  * |   2   | Pure Node.js(Single Thread)  | 11,629.34     | 1.72MB     | 20.63ms       |
  * |   3   | Express(JS, Multi Thread)    | 4,429.92      | 0.98MB     | 54.23ms       |
- * |   4   | Pure PHP(Multi Thread)       | 549.22        | 116.91KB   | 27.73ms       |
- * |   5   | Express(JS, Single Thread)   | 2,689.57      | 611.98KB   | 89.16ms       |
+ * |   4   | Express(JS, Single Thread)   | 2,689.57      | 611.98KB   | 89.16ms       |
+ * |   5   | Pure PHP(Multi Thread)       | 549.22        | 116.91KB   | 27.73ms       |
  * |   6   | Laravel(PHP, Multi Thread)   | 35.35         | 226.28KB   | 144.51ms      |
  * -------------------------------------------------------------------------------------
  */
