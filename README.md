@@ -10,7 +10,7 @@
 - PHP 7.0.7
 - Node 6.5.0
 
-#### Test Conditions
+#### Test Condition #1
 - Duration: 5s
 - Threads: 10
 - Connections: 5000
@@ -34,6 +34,34 @@ wrk -d5s -t10 -c5000 http://laravel.dev
  * |   4   | Pure PHP(Multi Thread)       | 3,147.95      | 667.17KB   | 23.28ms       |
  * |   5   | Express(JS, Single Thread)   | 2,386.69      | 543.06KB   | 97.97ms       |
  * |   6   | Laravel(PHP, Multi Thread)   | 26.23         | 101.44KB   | 392.64ms      |
+ * -------------------------------------------------------------------------------------
+ */
+```
+
+#### Test Condition #2
+- Duration: 30s
+- Threads: 10
+- Connections: 5000
+
+```php
+Node.js
+wrk -d30s -t10 -c5000 http://localhost:3000
+
+Laravel
+wrk -d30s -t10 -c5000 http://laravel.dev
+```
+
+```php
+/**
+ * Test results:
+ * | Rank  | Subject                      | Requests/sec  | Data/sec   | Avg. Response |
+ * -------------------------------------------------------------------------------------
+ * |   1   | Pure Node.js(Multi Thread)   | 24,559.01     | 3.63MB     | 9.76ms        |
+ * |   2   | Pure Node.js(Single Thread)  | 11,629.34     | 1.72MB     | 20.63ms       |
+ * |   3   | Express(JS, Multi Thread)    | 4,429.92      | 0.98MB     | 54.23ms       |
+ * |   4   | Pure PHP(Multi Thread)       | 549.22        | 116.91KB   | 27.73ms       |
+ * |   5   | Express(JS, Single Thread)   | 2,689.57      | 611.98KB   | 89.16ms       |
+ * |   6   | Laravel(PHP, Multi Thread)   | 35.35         | 226.28KB   | 144.51ms      |
  * -------------------------------------------------------------------------------------
  */
 ```
