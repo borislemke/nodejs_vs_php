@@ -12,8 +12,13 @@ If your work colleagues still tries to argue on using PHP over Node.js for whate
 - HDD 1TB
 
 - Server: nginx/1.10.0
+
 - PHP 7.0.7
+- Laravel 5.3.0
+
+
 - Node 6.5.0
+- Express 4.13.4
 
 #### Test Condition #1
 - Duration: 5s
