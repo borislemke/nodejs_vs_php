@@ -1,7 +1,6 @@
 # Node.JS vs PHP + Express vs Laravel
 
-If your work colleagues still tries to argue on using PHP over Node.js for whatever reason, show them these results and tell them to shut up. ;) I will see when I have the time to add Go to the test bed. I'm pretty sure Go will win overall but I have no plans on learning the language and environment in the near future. I'll get back to it when I feel ready.
-`Node.js FTW`
+We were arguing wheter to use PHP or go with Node.js for a project we are working on. It's practically a hybrid of the world's most popular online marketplace to list find and rent vacation homes and a popular social media network. We finally decided to go with Node.js after some benchmarks we made comparing PHP and Node.js and their most popular frameworks available.
 
 
 
