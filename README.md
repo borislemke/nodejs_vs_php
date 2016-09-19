@@ -102,8 +102,8 @@ Simple GET request that returns prime numbers between 0 and 1000
  * |   1   | Pure Node.js(Multi Thread)   | 16,802.80     | 12.64MB    | 14.30ms       |
  * |   2   | Pure Node.js(Single Thread)  | 8,727.14      | 6.57MB     | 26.92ms       |
  * |   3   | Express(JS, Multi Thread)    | 4,240.04      | 3.54MB     | 56.68ms       |
- * |   5   | Express(JS, Single Thread)   | 2,404.82      | 2.01MB     | 99.70ms       |
- * |   4   | Pure PHP(Multi Thread)       | 550.48        | 251.90KB   | 27.81ms       |
+ * |   4   | Express(JS, Single Thread)   | 2,404.82      | 2.01MB     | 99.70ms       |
+ * |   5   | Pure PHP(Multi Thread)       | 550.48        | 251.90KB   | 27.81ms       |
  * |   6   | Laravel(PHP, Multi Thread)   | 33.48         | 216.63KB   | 417.37ms      |
  * -------------------------------------------------------------------------------------
  */
