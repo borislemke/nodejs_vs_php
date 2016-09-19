@@ -79,6 +79,7 @@ wrk -d30s -t10 -c5000 http://laravel.dev
 ```
 
 ```php
+Simple GET request that returns "Hello World"
 /**
  * Test results:
  * | Rank  | Subject                      | Requests/sec  | Data/sec   | Avg. Response |
