@@ -2,7 +2,7 @@
 
 We were arguing wheter to use PHP or go with Node.js for a project we are working on. It's practically a hybrid of the world's most popular online marketplace to list find and rent vacation homes and a popular social media network. We finally decided to go with Node.js after some benchmarks we made comparing PHP and Node.js and their most popular frameworks available.
 
-UPDATE: Added Go to the benchmark because for future considerations
+UPDATE: Added Go to the benchmark for future considerations
 
 
 
@@ -27,6 +27,9 @@ UPDATE: Added Go to the benchmark because for future considerations
 - Connections: 5000
 
 ```php
+Go
+wrk -d5s -t10 -c5000 http://localhost:8080
+
 Node.js
 wrk -d5s -t10 -c5000 http://localhost:3000
 
@@ -76,6 +79,9 @@ Simple GET request that returns prime numbers between 0 and 1000
 - Connections: 5000
 
 ```php
+Go
+wrk -d30s -t10 -c5000 http://localhost:8080
+
 Node.js
 wrk -d30s -t10 -c5000 http://localhost:3000
 
